@@ -1,0 +1,258 @@
+/* Header Styles */
+header {
+    background-color: #4CAF50; /* Header background color */
+    color: white;
+    padding: 20px;
+    text-align: center; /* Centered header text */
+}
+
+header a {
+    color: white;
+    text-decoration: none; /* Remove underline */
+    margin-top: 10px; /* Space above link */
+    display: inline-block; /* Make it block to apply margins */
+    padding: 8px 15px; /* Padding for link */
+    background-color: #333; /* Background for link */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+header a:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+/* Main section styling */
+main {
+    max-width: 600px; /* Limit width of the main section */
+    margin: 20px auto; /* Center the section */
+    padding: 20px; /* Padding inside the section */
+    background-color: white; /* White background for content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Compact product details styling */
+#product-details {
+    display: flex;
+    flex-direction: column; /* Stack product info vertically */
+    align-items: center; /* Center align items */
+}
+
+#product-details img {
+    max-width: 80%; /* Adjust image size for compactness */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below image */
+}
+
+#product-details h2 {
+    font-size: 1.5em; /* Slightly smaller font for title */
+    margin: 10px 0; /* Space above and below product title */
+    color: #333; /* Dark color for title */
+}
+
+.product-price {
+    font-size: 1.2em; /* Smaller font for price */
+    color: #4CAF50; /* Green color for price */
+    margin: 5px 0; /* Space around price */
+}
+
+.product-description {
+    font-size: 0.9em; /* Smaller font for description */
+    margin: 10px 0; /* Space above and below description */
+    color: #666; /* Grey color for description */
+    text-align: center; /* Center align text */
+}
+
+/* Button for viewing product */
+.view-button {
+    background-color: #4CAF50; /* Green button */
+    color: white; /* White text */
+    padding: 8px 15px; /* Padding inside button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition effect */
+    font-size: 0.9em; /* Smaller font size */
+}
+
+.view-button:hover {
+    background-color: #388E3C; /* Darker green on hover */
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 20px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 2em; /* Padding for spacing */
+    margin-top: 20px; /* Space above footer */
+}
+
+.footer-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: space-between; /* Space out sections */
+}
+
+.newsletter {
+    flex: 1; /* Allow flexibility */
+    margin-right: 2em; /* Space to the right */
+}
+
+.newsletter h2 {
+    margin: 0.5em 0;
+}
+
+.newsletter p {
+    margin-bottom: 1em;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.5em;
+    border-radius: 4px;
+    border: none;
+    margin-right: 0.5em;
+    width: 70%; /* Width for email input */
+}
+
+.newsletter button {
+    background-color: #2874f0; /* Button color */
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.footer-links,
+.quick-links,
+.contact-info,
+.payment-methods {
+    flex: 1; /* Allow flexibility */
+    margin: 0 1em; /* Horizontal margin */
+}
+
+.footer-links h3,
+.quick-links h3,
+.contact-info h3 {
+    margin-bottom: 0.5em;
+}
+
+.footer-links ul,
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li,
+.quick-links li {
+    margin: 0.5em 0;
+}
+
+.footer-links a,
+.quick-links a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.quick-links a:hover {
+    color: #2874f0; /* Link hover color */
+}
+
+.footer-bottom {
+    text-align: center; /* Center align bottom text */
+    margin-top: 2em; /* Margin above bottom */
+    border-top: 1px solid #555; /* Top border */
+    padding-top: 1em; /* Padding on top */
+}
+
+.payment-methods {
+    flex: 1; /* Flex for equal distribution */
+    margin-left: 2em; /* Space to the left */
+}
+
+.payment-methods h3 {
+    margin-bottom: 0.5em; /* Spacing below the heading */
+}
+
+.payment-icons {
+    display: flex; /* Use flexbox for alignment */
+    gap: 1em; /* Space between payment icons */
+    margin-top: 1em; /* Space above the icons */
+}
+
+.payment-icon {
+    font-size: 24px; /* Size of the icons */
+    color: #fff; /* Color of the icons, change as needed */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.payment-icon:hover {
+    color: #f39c12; /* Change color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 15px; /* Reduced padding for header */
+    }
+
+    header a {
+        padding: 6px 12px; /* Reduced padding for links */
+        font-size: 0.9em; /* Smaller font size */
+    }
+
+    main {
+        max-width: 90%; /* Increased max-width for smaller screens */
+        margin: 10px auto; /* Reduced margin */
+        padding: 15px; /* Reduced padding */
+    }
+
+    #product-details img {
+        max-width: 100%; /* Full width for images */
+    }
+
+    .product-price,
+    .product-description,
+    .view-button {
+        font-size: 0.9em; /* Smaller font sizes */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Stack footer items */
+        align-items: center; /* Center align footer items */
+    }
+
+    .newsletter {
+        margin-right: 0; /* Reset margin for stacking */
+        margin-bottom: 20px; /* Space below the newsletter */
+    }
+
+    .footer-links,
+    .quick-links,
+    .contact-info,
+    .payment-methods {
+        flex: 1 0 100%; /* Full width for footer items */
+        margin: 5px 0; /* Vertical spacing */
+    }
+
+    .payment-icons {
+        flex-direction: column; /* Stack payment icons */
+        align-items: center; /* Center align icons */
+    }
+}
